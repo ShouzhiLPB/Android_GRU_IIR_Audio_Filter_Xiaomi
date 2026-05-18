@@ -1,0 +1,41 @@
+# Downloaded third-party trees (regenerate with automation/fetch_third_party.py)
+third_party/oboe/
+third_party/onnxruntime-android/
+
+# Build and machine output
+artifacts/build/
+artifacts/deploy/
+artifacts/logs/
+artifacts/test_results/
+
+# Android Studio / Gradle (rebuild locally)
+workspaces/android_app/.gradle/
+workspaces/android_app/build/
+workspaces/android_app/app/build/
+workspaces/android_app/app/.cxx/
+workspaces/android_app/local.properties
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Test outputs (regenerate with tests/ scripts + a connected phone)
+tests/results/
+
+# IDE
+.vscode/
+.idea/
+
+# Local bench logs
+latency_block_*.txt
+
+# Optional: teammate power traces (not needed to build or run)
+tests/data/teammate/
+
+# Large release artifact
+artifacts/final_project_backup.zip
+
+# Generated host check (local paths)
+env_check.md
